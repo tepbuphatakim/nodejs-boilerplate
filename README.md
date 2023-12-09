@@ -1,10 +1,6 @@
-# Social media Telegram bot
+# Nodejs boilerplate
 
-## Create Telegram bot
-
-Create a Telegram bot and get the bot token.
-
-![create telegram bot](./docs/create-telegram-bot.jpg)
+A productive Nodejs, Express, and Sequelize RESTful API open-source boilerplate written in modern Javascript published by Tepbuphata KIM.
 
 ## Configuration
 
@@ -14,13 +10,12 @@ Copy .env.example and rename to .env.
 cp .env.example .env
 ```
 
-Configure bot token, jwt secret key and database.
+Configure Jwt secret key and database.
 The jwt secret key can be anything include a random string.
 
 .env: 
 
 ```bash
-BOT_TOKEN=6300302475:AAEzt7Hy9p048kSQMO7F6EasM0V911SYC-8
 JWT_SECRET_KEY=123
 
 DB_HOST=mariadb
@@ -48,8 +43,8 @@ docker-compose up -d --build
 Run the bash in Docker container and execute seed with dump data.
 
 ```bash
-docker exec -it teb-be /bin/bash
-npx sequelize-cli db:seed:all
+docker exec -it {container_name} /bin/bash
+npm run seed:up
 ```
 
 ## Quick start in local
@@ -75,7 +70,7 @@ npm run migrate:up
 Seed dummy data.
 
 ```bash
-npx sequelize-cli db:seed:all
+npm run seed:up
 ```
 
 ### Running
@@ -93,9 +88,3 @@ Running the application in development mode. This will refresh the app when code
 ```bash
 npm run dev
 ```
-
-## Result overview
-
-Setup Telegram bot menu and test it out.
-
-![start telegram bot](./docs/starting-telegram-bot.jpg)
