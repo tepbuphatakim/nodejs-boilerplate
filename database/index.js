@@ -1,0 +1,19 @@
+import { Sequelize } from 'sequelize';
+
+const { DB_HOST, DB_PORT, DB_DIALECT, DB_NAME, DB_USERNAME, DB_PASSWORD } =
+  process.env;
+const sequelize = new Sequelize(DB_NAME, DB_USERNAME, DB_PASSWORD, {
+  host: DB_HOST,
+  dialect: DB_DIALECT,
+  port: DB_PORT || 3306,
+});
+
+try {
+  await sequelize.authenticate();
+  console.log('Connection has been established successfully.');
+} catch (error) {
+  console.error('Unable to connect to the database:', error);
+}
+
+console.warn('Sequelize init!!!');
+export default sequelize;

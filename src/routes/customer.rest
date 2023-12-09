@@ -1,0 +1,37 @@
+@api = http://localhost:3000
+
+POST {{api}}/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "123"
+}
+
+### 
+
+GET {{api}}/customers
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZF9hZG1pbiI6MSwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJGJ1T1hGSWJPdFB0VW5UMGcwSHNJL09BcElwVkg3dmRoUkdlcDc2bzRMd0hGUHVhWlVBQUNLIn0sImlhdCI6MTY5ODU2NTk0OCwiZXhwIjoxNjk4NjUyMzQ4fQ.0rNJAdqQ7kR12_gwn5tobDuWzmNgUoElhzYbrBXJZH0
+
+###
+
+GET {{api}}/customers/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZF9hZG1pbiI6MSwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJGJ1T1hGSWJPdFB0VW5UMGcwSHNJL09BcElwVkg3dmRoUkdlcDc2bzRMd0hGUHVhWlVBQUNLIn0sImlhdCI6MTY5ODU2NTk0OCwiZXhwIjoxNjk4NjUyMzQ4fQ.0rNJAdqQ7kR12_gwn5tobDuWzmNgUoElhzYbrBXJZH0
+
+###
+
+POST {{api}}/customers
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZF9hZG1pbiI6MSwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJGJ1T1hGSWJPdFB0VW5UMGcwSHNJL09BcElwVkg3dmRoUkdlcDc2bzRMd0hGUHVhWlVBQUNLIn0sImlhdCI6MTY5ODU2NTk0OCwiZXhwIjoxNjk4NjUyMzQ4fQ.0rNJAdqQ7kR12_gwn5tobDuWzmNgUoElhzYbrBXJZH0
+
+{
+  "name": "Customer 1",
+  "description": "Delivery to Prey veng",
+  "phone_number": "011 222 333"
+}
