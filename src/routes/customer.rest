@@ -28,10 +28,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZF9hZ
 POST {{api}}/customers
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZF9hZG1pbiI6MSwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJGJ1T1hGSWJPdFB0VW5UMGcwSHNJL09BcElwVkg3dmRoUkdlcDc2bzRMd0hGUHVhWlVBQUNLIn0sImlhdCI6MTY5ODU2NTk0OCwiZXhwIjoxNjk4NjUyMzQ4fQ.0rNJAdqQ7kR12_gwn5tobDuWzmNgUoElhzYbrBXJZH0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZF9hZG1pbiI6MSwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJHNLdlRLNHdRcXlWeVJQek1relI5bk9LMFdEOU5xd2xnQmZuUHowbTFPMUNMeW0velFlNEZDIn0sImlhdCI6MTcwMzMxNjcwMSwiZXhwIjoxNzAzNDAzMTAxfQ.YyOgdS7cf3no_hT5PAGOQoBuKkryN-mJfkCMvsYWp_U
 
 {
-  "name": "Customer 1",
+  "name": "1234567899",
   "description": "Delivery to Prey veng",
   "phone_number": "011 222 333"
 }
