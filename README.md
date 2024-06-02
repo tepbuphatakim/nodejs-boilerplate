@@ -1,6 +1,6 @@
 # Nodejs boilerplate
 
-A productive Nodejs, Express, and Sequelize RESTful API open-source boilerplate written in modern Javascript published by Tepbuphata KIM.
+A productive Nodejs, Express, and Sequelize RESTful API open-source boilerplate written in modern Javascript.
 
 ## Configuration
 
